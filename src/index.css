@@ -51,6 +51,7 @@
 @layer components {
   .pattern {
     @apply bg-hero-pattern w-full h-screen bg-center bg-cover absolute z-0;
+    z-index: -1;
   }
 
   .wrapper {
@@ -79,6 +80,7 @@
 
   .search {
     @apply w-full bg-light-100/5 px-4 py-3 rounded-lg mt-10 max-w-3xl mx-auto;
+    background-color: color-mix(in oklab, var(--color-light-100) 5%, transparent) !important;
 
     & div {
       @apply relative flex items-center;
